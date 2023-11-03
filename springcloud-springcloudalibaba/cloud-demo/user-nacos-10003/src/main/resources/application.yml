@@ -13,6 +13,7 @@ spring:
       server-addr: localhost:8848
       discovery:
         cluster-name: HZ #集群名称
+        namespace: edc365f6-2792-4866-b84a-236fa1f51a8e
 
 
 mybatis:
