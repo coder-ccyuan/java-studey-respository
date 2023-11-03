@@ -1,0 +1,16 @@
+server:
+  port: 10001
+spring:
+  application:
+    name: user-eureka
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/user_micro?useUnicode=true&rewriteBatchedStatements=true&serverTimezone=GMT%2B8
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
