@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/order-eureka-10002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-nacos-10004/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-nacos-10004/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-nacos-10006/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-nacos-10006/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
@@ -18,6 +20,8 @@
     <file url="file://$PROJECT_DIR$/user-eureka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-nacos-10003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-nacos-10003/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-nacos-10005/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-nacos-10005/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/main/resources" charset="UTF-8" />
   </component>
