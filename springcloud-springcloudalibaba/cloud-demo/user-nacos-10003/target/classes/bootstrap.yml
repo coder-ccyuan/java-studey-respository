@@ -7,9 +7,9 @@ spring:
       #nacos 的配置中心和注册中心的namespace是分开的
       config:
         file-extension: yaml #配置中心文件后缀名
-        namespace: edc365f6-2792-4866-b84a-236fa1f51a8e
-      discovery:
 #        namespace: edc365f6-2792-4866-b84a-236fa1f51a8e
+      discovery:
+        namespace: edc365f6-2792-4866-b84a-236fa1f51a8e
   application:
     name: user-nacos
   profiles:

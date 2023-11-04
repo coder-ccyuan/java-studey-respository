@@ -10,18 +10,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-service" />
         <module name="user-eureka-10001" />
         <module name="order-eureka-10002" />
-        <module name="user-nacos-10003" />
         <module name="order-nacos-10006" />
-        <module name="user-eureka" />
         <module name="user-service" />
-        <module name="order-service" />
         <module name="order-nacos-10004" />
-        <module name="user-nacos-10005" />
         <module name="demo" />
         <module name="feign-api" />
+        <module name="eureka-service" />
+        <module name="user-nacos-10003" />
+        <module name="user-eureka" />
+        <module name="order-service" />
+        <module name="user-nacos-10005" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
