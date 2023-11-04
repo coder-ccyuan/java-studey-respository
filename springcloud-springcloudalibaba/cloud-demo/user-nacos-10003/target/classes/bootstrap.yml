@@ -1,0 +1,16 @@
+#该文件的加载优先级比application.yml 要高
+#因为配置中心的相关配置要最先加载，所以需要该文件
+spring:
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      #nacos 的配置中心和注册中心的namespace是分开的
+      config:
+        file-extension: yaml #配置中心文件后缀名
+        namespace: edc365f6-2792-4866-b84a-236fa1f51a8e
+      discovery:
+#        namespace: edc365f6-2792-4866-b84a-236fa1f51a8e
+  application:
+    name: user-nacos
+  profiles:
+    active: dev #环境
