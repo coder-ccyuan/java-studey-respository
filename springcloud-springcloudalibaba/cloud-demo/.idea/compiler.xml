@@ -21,6 +21,7 @@
         <module name="order-nacos-10004" />
         <module name="user-nacos-10005" />
         <module name="demo" />
+        <module name="feign-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

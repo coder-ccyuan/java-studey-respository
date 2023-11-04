@@ -16,8 +16,16 @@ spring:
         ephemeral: false #默认true 临时实例，false 非临时实例，非临时实例下线后不会被nacos service 剔出
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-
 logging:
   level:
     web: trace
     sql: trace
+feign:
+  client:
+    config:
+      default: #default 为开启全局日志 ，可以写具体服务名
+        loggerLevel: basic #日志范围
+  httpclient:
+    enabled: true #开启http链接池
+    max-connections: 200
+    max-connections-per-route: 50

@@ -1,10 +1,11 @@
-package org.example.entity;
+package cpy.feign.entity;
 
 import lombok.Data;
 
 @Data
-public class User {
+public class Order {
     private Long id;
+    private Long UserId;
     private String name;
     private String address;
 }

@@ -17,6 +17,7 @@
         <module>order-nacos-10004</module>
         <module>user-nacos-10005</module>
         <module>order-nacos-10006</module>
+        <module>feign-api</module>
     </modules>
 
     <properties>
