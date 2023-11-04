@@ -1,7 +1,7 @@
-D:\JAVAProject\spring_cloud_and_alibaba\cloud-demo\user-service\src\main\java\org\example\mapper\UserMapper.java
-D:\JAVAProject\spring_cloud_and_alibaba\cloud-demo\user-service\src\main\java\org\example\entity\User.java
-D:\JAVAProject\spring_cloud_and_alibaba\cloud-demo\user-service\src\main\java\org\example\Main.java
-D:\JAVAProject\spring_cloud_and_alibaba\cloud-demo\user-service\src\main\java\org\example\UserServiceApplication.java
-D:\JAVAProject\spring_cloud_and_alibaba\cloud-demo\user-service\src\main\java\org\example\service\UserService.java
-D:\JAVAProject\spring_cloud_and_alibaba\cloud-demo\user-service\src\main\java\org\example\service\impl\UserServiceImpl.java
-D:\JAVAProject\spring_cloud_and_alibaba\cloud-demo\user-service\src\main\java\org\example\controller\UserController.java
+D:\git resposity\java-studey-respository\springcloud-springcloudalibaba\cloud-demo\user-service\src\main\java\org\example\mapper\UserMapper.java
+D:\git resposity\java-studey-respository\springcloud-springcloudalibaba\cloud-demo\user-service\src\main\java\org\example\controller\UserController.java
+D:\git resposity\java-studey-respository\springcloud-springcloudalibaba\cloud-demo\user-service\src\main\java\org\example\entity\User.java
+D:\git resposity\java-studey-respository\springcloud-springcloudalibaba\cloud-demo\user-service\src\main\java\org\example\Main.java
+D:\git resposity\java-studey-respository\springcloud-springcloudalibaba\cloud-demo\user-service\src\main\java\org\example\service\impl\UserServiceImpl.java
+D:\git resposity\java-studey-respository\springcloud-springcloudalibaba\cloud-demo\user-service\src\main\java\org\example\service\UserService.java
+D:\git resposity\java-studey-respository\springcloud-springcloudalibaba\cloud-demo\user-service\src\main\java\org\example\UserServiceApplication.java

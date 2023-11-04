@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
-import static com.sun.activation.registries.LogSupport.log;
 
 @RestController
 @Slf4j

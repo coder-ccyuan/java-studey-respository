@@ -12,6 +12,8 @@ spring:
     nacos:
       discovery:
         server-addr: http://localhost:8848
+        namespace: edc365f6-2792-4866-b84a-236fa1f51a8e #环境隔离，不同环境的服务之间不能拉取，无法访问
+        ephemeral: false #默认true 临时实例，false 非临时实例，非临时实例下线后不会被nacos service 剔出
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 
