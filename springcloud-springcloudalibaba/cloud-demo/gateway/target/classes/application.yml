@@ -1,0 +1,20 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        namespace: edc365f6-2792-4866-b84a-236fa1f51a8e
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-nacos #路由的目标地址
+          predicates:
+            - Path=/user/**
+        - id: order-service
+          uri: lb://order-nacos
+          predicates:
+            - Path=/order/**
