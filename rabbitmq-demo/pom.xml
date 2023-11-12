@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>publisher</module>
+        <module>consumer</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -33,6 +34,12 @@
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+    <!--rabbitmq的默认将对象序列化类不太ok,采用json格式-->
+    <dependency>
+        <groupId>com.fasterxml.jackson.dataformat</groupId>
+        <artifactId>jackson-dataformat-xml</artifactId>
+        <version>2.9.10</version>
     </dependency>
 </dependencies>
 </project>

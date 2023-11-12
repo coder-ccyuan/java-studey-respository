@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 192.168.99.132
+    port: 5672
+    username: cpy
+    password: 123456
+    virtual-host: /
+    listener:
+      simple:
+        prefetch: 1 #没处理完一次取一个 ，默认无限
