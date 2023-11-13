@@ -22,6 +22,9 @@ import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * 对文档操作
+ */
 @SpringBootTest
 public class UserIndexDocTest {
     @Resource
@@ -30,7 +33,7 @@ public class UserIndexDocTest {
     @BeforeEach
     void setUp(){
         this.client=new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://192.168.99.132:9200")
+                HttpHost.create("http://192.168.99.133:9200")
         ));
     }
 
@@ -78,6 +81,10 @@ public class UserIndexDocTest {
         DeleteRequest request = new DeleteRequest("user", "1");
         client.delete(request,RequestOptions.DEFAULT);
     }
+    /**
+     * 批量添加数据
+     * @throws IOException
+     */
     @Test
     void bulkAddDocTest() throws IOException {
         BulkRequest bulkRequest = new BulkRequest();

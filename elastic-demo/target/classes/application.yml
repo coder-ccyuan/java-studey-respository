@@ -4,7 +4,7 @@ spring:
   application:
     name: elastic-demo
   datasource:
+    url: jdbc:mysql://localhost:3306/api?rewriteBatchedStatements=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://localhost:3306/elastic_demo?rewriteBatchedStatements=true

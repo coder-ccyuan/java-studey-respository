@@ -16,6 +16,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 
+/**
+ * 对索引库操作
+ */
 
 @SpringBootTest
 public class UserIndexTest {
@@ -23,7 +26,7 @@ public class UserIndexTest {
 @BeforeEach
     void setUp(){
         this.client=new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://192.168.99.132:9200")
+                HttpHost.create("http://192.168.99.133:9200")
         ));
     }
     @Test
