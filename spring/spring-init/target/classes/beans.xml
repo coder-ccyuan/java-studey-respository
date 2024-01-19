@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--通过get()and set()方法实现-->
+    <bean class="org.cpy.entiey.Car" id="car01" >
+        <property name="name" value="byd"/>
+        <property name="id" value="1"/>
+        <property name="price" value="433420.99"/>
+    </bean>
+    <!--通过构造器-->
+    <bean class="org.cpy.entiey.Car" id="car02">
+        <constructor-arg type="java.lang.Long" value="2"/>
+        <constructor-arg type="java.lang.String" value="bwm"/>
+        <constructor-arg type="java.lang.Double" value="4314.22"/>
+    </bean>
+    <!--使用bean的后置处理器-->
+    <!--<bean id="myBeanPostProcess" class="org.cpy.beanPostProcess.MyBeanPostProcess"/>-->
+    <!--开启注解扫包-->
+    <context:component-scan base-package="org.cpy.*" >
+        <!--过滤掉type为注解的@Service注解-->
+        <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>-->
+    </context:component-scan>
+    <!--开启aop的aspects的注解功能-->
+    <aop:aspectj-autoproxy />
+
+    <!--引入配置文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <!--注入数据源-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="url" value="${jdbc.url}"/>
+    </bean>
+    <!--配置jdbcTemple-->
+    <bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!-- 配置事务管理器 -->
+    <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!-- 开启基于注解的声明式事务功能 -->
+    <tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>
+</beans>
